@@ -13,9 +13,9 @@
  */
 class Personnage {
 
-    public $vie = 80;
-    public $atk = 20;
-    public $nom;
+    private $vie = 80;
+    private $atk = 20;
+    private $nom;
 
     public function __construct($nom) {
         $this->nom = $nom;
@@ -61,6 +61,14 @@ class Personnage {
 
     public function attaque($cible) {
         $cible->vie -= $this->atk;
+    }
+    
+    private function empecher_negatif()
+    {
+        if($this->vie < 0)
+        {
+            $this->vie=0;
+        }
     }
 
 }

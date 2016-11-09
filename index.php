@@ -9,8 +9,8 @@ $harry = new Personnage("Harry");
 
 
 
-echo $merlin->nom;
+echo $merlin->getNom();
 var_dump($merlin);
 
-echo $harry->nom;
+echo $harry->getNom();
 var_dump($harry);
