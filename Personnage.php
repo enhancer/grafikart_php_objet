@@ -25,6 +25,24 @@ class Personnage {
         return $this->nom;
     }
 
+    public function getVie() {
+        return $this->vie;
+    }
+
+    public function getAtk() {
+        return $this->atk;
+    }
+
+    public function setVie($vie) {
+        $this->vie = $vie;
+    }
+
+    public function setAtk($atk) {
+        $this->atk = $atk;
+    }
+
+        
+    
     public function crier() {
         echo "CRIER";
     }
