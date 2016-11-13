@@ -9,9 +9,9 @@ namespace Tutoriel\HTML;
 /**
  * Description of BootstrapForm
  *
- * @author F005276
+ * @author chris
  */
-class BootstrapForm extends \Tutoriel\HTML\Form{
+class BootstrapForm extends Form{
     
     
     

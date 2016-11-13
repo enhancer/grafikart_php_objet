@@ -2,7 +2,7 @@
 namespace Tutoriel;
 require 'Class/Autoloader.php';
 
-\Tutoriel\Autoloader::register();
+Autoloader::register();
 
 
 $merlin = new Personnage('Merlin');

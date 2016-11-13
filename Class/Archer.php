@@ -9,7 +9,7 @@ namespace Tutoriel;
 /**
  * Description of Archer
  *
- * @author F005276
+ * @author chris
  */
 class Archer extends Personnage {
     

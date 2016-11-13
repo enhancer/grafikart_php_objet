@@ -6,8 +6,10 @@
 <body>
 
 <?php
+
 use \Tutoriel\HTML\BootstrapForm;
 use \Tutoriel\Autoloader;
+use \Tutoriel;
 require 'Class/Autoloader.php';
 
 Autoloader::register();
@@ -16,7 +18,7 @@ Autoloader::register();
 
 $form = new BootstrapForm($_POST);
 
-var_dump(Text::withZero(4));
+var_dump(\Tutoriel\Text::withZero(4));
 
 
 ?>

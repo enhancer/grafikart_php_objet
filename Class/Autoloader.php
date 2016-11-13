@@ -1,6 +1,6 @@
 <?php
-
 namespace Tutoriel;
+
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -11,7 +11,7 @@ namespace Tutoriel;
 /**
  * Description of Autoloader
  *
- * @author F005276
+ * @author chris
  */
 class Autoloader {
 
@@ -20,9 +20,11 @@ class Autoloader {
     }
 
     static function autoload($class) {
-        if (strpos($class, __NAMESPACE___ . '\\') === 0) {
-            $class = str_replace(__NAMESPACE__ . '\\', '', $class);
+       If (strpos($class, __NAMESPACE__.'\\') === 0) {
+            $class = str_replace(__NAMESPACE__.'\\', '', $class);
             $class = str_replace('\\', '/', $class);
+            echo './Class/' . $class . '.php <br>';
+         
             require './Class/' . $class . '.php';
         }
     }

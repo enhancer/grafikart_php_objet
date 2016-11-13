@@ -9,7 +9,7 @@ namespace Tutoriel;
 /**
  * Description of Text
  *
- * @author F005276
+ * @author chris
  */
 class Text {
     
